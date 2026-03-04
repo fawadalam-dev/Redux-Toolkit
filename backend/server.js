@@ -27,6 +27,9 @@ let products = [
         description: 'This is HP Laptop',
     },
 ];
+app.get('/', (req, res) => {
+    res.send('API is running on port 8000');
+});
 app.get('/products', (req, res) => {
     res.json(products);
 });
